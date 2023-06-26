@@ -1,0 +1,3 @@
+Python is heavy
+Python is easy
+Python is lite
