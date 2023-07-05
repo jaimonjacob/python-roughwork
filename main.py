@@ -1,6 +1,5 @@
 from testinput import greet_user
 
-
 def welcome_user():
     '''Take inputs from the user and welcome him/her'''
     print('Plesae enter your first and last name: \n')
