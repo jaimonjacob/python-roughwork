@@ -15,9 +15,16 @@ from testinput import greet_user, Anonymoussurvey
 
 # welcome_user()
 
-survey_one = Anonymoussurvey('what\'s my name?')
-survey_one.show_question()
-survey_one.add_responses('john doe')
-print(vars(survey_one))
-
-
+def AskQuestions(question):
+  my_survey = Anonymoussurvey(question)
+  print('Answer the questions below')
+  print('If you want to exit, enter q')
+  my_survey.show_question()  
+  While True:
+    response = input("Your answer: ")
+    if response = 'q':
+      break
+    my_survey.add_response(response)
+  print(f'Your answer {my_survey.show_results()}')
+  
+AskQuestions("What's your name")
